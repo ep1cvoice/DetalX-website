@@ -13,41 +13,47 @@
 
     <header class="header">
         <nav class="nav">
-            <div class="nav__container nav__container--left">
-                <a href="#" class="nav__brand">
-                    <img class='nav__logo' src="./img/icons/xzdetalz-logo-mini_white.svg" alt="Logo firmy XDetalz">
-                </a>
+            <div class="nav__inner">
+                <div class="nav__container nav__container--left">
+                    <a href="#" class="nav__brand">
+                        <img class='nav__logo' src="./img/icons/xzdetalz-logo-mini_white.svg" alt="Logo firmy XDetalz">
+                    </a>
+                </div>
+
+                <div class="nav__container nav__container--right">
+
+                    <button class="nav__burger" aria-label="Menu">
+                        <div class="nav__burger-box">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="nav__menu">
+                    <a href="#about" class="nav__link">info</a>
+                    <a href="#services" class="nav__link">usługi</a>
+                    <a href="#gallery" class="nav__link">galeria</a>
+                    <a href="#reviews" class="nav__link">opinie</a>
+                    <a href="#achievements" class="nav__link">osiągnięcia</a>
+                    <a href="#faq" class="nav__link">faq</a>
+                    <a href="#contact" class="nav__link">kontakt</a>
+                </div>
             </div>
 
-            <div class="nav__container nav__container--right">
 
-                <button class="nav__burger" aria-label="Menu">
-                    <div class="nav__burger-box">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </button>
-            </div>
 
-            <div class="nav__menu">
-                <a href="#about" class="nav__link">info</a>
-                <a href="#services" class="nav__link">usługi</a>
-                <a href="#gallery" class="nav__link">galeria</a>
-                <a href="#opinions" class="nav__link">opinie</a>
-                <a href="#faq" class="nav__link">faq</a>
-                <a href="#contact" class="nav__link">kontakt</a>
-            </div>
             <div class="nav__menu-mobile">
                 <a href="#about" class="nav__link">info</a>
                 <a href="#services" class="nav__link">usługi</a>
                 <a href="#gallery" class="nav__link">galeria</a>
-                <a href="#opinions" class="nav__link">opinie</a>
+                <a href="#reviews" class="nav__link">opinie</a>
+                <a href="#achievements" class="nav__link">osiągnięcia</a>
                 <a href="#faq" class="nav__link">faq</a>
                 <a href="#contact" class="nav__link">kontakt</a>
             </div>
         </nav>
-
         <section class="hero" id="home">
             <h1 class="hero__heading">DetalX</h1>
             <p class="hero__text">Perfekcja w każdym detalu</p>
@@ -63,12 +69,13 @@
                 </div>
             </a>
         </section>
+
     </header>
 
 
     <main class="main">
 
-        <section class="about" id="about">
+        <section class="about section" id="about">
             <div class="wrapper">
 
                 <h2 class="section-title">info</h2>
@@ -98,7 +105,7 @@
             </div>
         </section>
 
-        <section class="services" id="services">
+        <section class="services section" id="services">
             <div class="wrapper">
                 <h2 class="section-title">usługi</h2>
                 <div class="underline"></div>
@@ -156,10 +163,150 @@
 
             </div>
         </section>
-        <section class="faq" id="faq">
+
+        <section class="reviews" id="reviews">
+            <div class="review_wrapper wrapper">
+                <h2 class="reviews__title section-title">Opinie</h2>
+                <div class="reviews__underline underline"></div>
+
+                <p class="reviews__subtitle">Poznaj opinie naszych klientów</p>
+
+                <div class="reviews__carousel">
+                    <!-- Review 1 -->
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="https://i.pravatar.cc/80?img=1" alt="Jan" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Jan</h3>
+                                <span class="reviews__car">Audi A4</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">Mega praca! Auto lśni jak nowe, wszystkie detale dopracowane w 100%.
+                        </p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="https://i.pravatar.cc/80?img=2" alt="Marta" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Marta</h3>
+                                <span class="reviews__car">Mercedes C200</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">Profesjonalnie, szybko i czysto. Wnętrze pachnie nowością, polecam
+                            każdemu!</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="https://i.pravatar.cc/80?img=3" alt="Paweł" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Paweł</h3>
+                                <span class="reviews__car">BMW F11</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">Że skóra jak nowa! Renowacja petarda, ceramika i felgi dopieszczone do
+                            perfekcji!</p>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="https://i.pravatar.cc/80?img=4" alt="Krzysztof" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Krzysztof</h3>
+                                <span class="reviews__car">VW Golf</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">Felgi i lakier jak z salonu! Widać, że Pan zna się na rzeczy.</p>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="https://i.pravatar.cc/80?img=5" alt="Agnieszka" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Agnieszka</h3>
+                                <span class="reviews__car">Toyota Corolla</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">Czystość wnętrza i połysk lakieru powala, na pewno wrócę przy kolejnej
+                            okazji.</p>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="https://i.pravatar.cc/80?img=6" alt="Tomasz" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Tomasz</h3>
+                                <span class="reviews__car">Skoda Octavia</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">Polecam każdemu, kto chce, żeby auto wyglądało jak nowe — perfekcja w
+                            każdym calu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="achievements" id="achievements">
             <div class="wrapper">
-                <h2 class="faq__title section-title">faq</h2>
-                <div class="faq__underline underline"></div>
+                <h2 class="achievements__title section-title">Osiągnięcia</h2>
+                <div class="achievements__underline underline"></div>
+
+                <div class="achievements__grid">
+
+                    <div class="achievements__item">
+                        <i class="fa-solid fa-award achievements__icon"></i>
+                        <p>Ponad 3 lata doświadczenia w detailingu</p>
+                    </div>
+
+                    <div class="achievements__item">
+                        <i class="fa-solid fa-users achievements__icon"></i>
+                        <p>Ponad 100 zadowolonych klientów</p>
+                    </div>
+
+
+                    <div class="achievements__item">
+                        <i class="fa-solid fa-car-side achievements__icon"></i>
+                        <p>Ponad 200 wykonanych usług detailingowych</p>
+                    </div>
+
+                    <div class="achievements__item">
+                        <i class="fa-solid fa-thumbs-up achievements__icon"></i>
+                        <p>Większość zleceń pochodzi z poleceń — usługi sprawdzone i rekomendowane</p>
+                    </div>
+
+                    <div class="achievements__item">
+                        <i class="fa-solid fa-rotate-left achievements__icon"></i>
+                        <p>Stała współpraca z klientami powracającymi</p>
+                    </div>
+
+                    <div class="achievements__item">
+                        <i class="fa-solid fa-certificate achievements__icon"></i>
+                        <p>Certyfikaty ukończenia kursów detailerskich</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq section" id="faq">
+            <h2 class="section-title">faq</h2>
+            <div class="underline"></div>
+
+            <div class="wrapper">
 
                 <div class="faq__list">
 
@@ -279,37 +426,54 @@
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
-            <div class="wrapper">
-                <h2 class="contact__title section-title">Kontakt</h2>
-                <div class="contact__underline underline"></div>
 
-                <p class="contact__description">
-                    Masz pytania lub chcesz umówić się na detailing? Skontaktuj się ze mną bezpośrednio przez telefon,
-                    WhatsApp lub Instagram.
-                </p>
 
-                <div class="contact__list">
-                    <a href="tel:+48123456789" class="contact__item">
-                        <span class="contact__icon">ikonka</span>
-                        <span class="contact__text">+48 123 456 789</span>
-                    </a>
+        <section class="contact section" id="contact">
+            <h2 class="section-title">kontakt</h2>
+            <div class="underline"></div>
 
-                    <a href="https://wa.me/48123456789" target="_blank" class="contact__item">
-                        <span class="contact__icon">ikonka</span>
-                        <span class="contact__text">WhatsApp</span>
-                    </a>
 
-                    <a href="https://www.instagram.com/twoj_profil" target="_blank" class="contact__item">
-                        <span class="contact__icon">ikonka</span>
-                        <span class="contact__text">@profil</span>
-                    </a>
+            <div class="contact__grid">
+                <!-- LEFT SIDE: Pitch + CTA -->
+                <div class="contact__left glass">
+                    <h3>Twój samochód zasługuje na najlepszą i profesjonalną pielęgnację.</h3>
+                    <p>
+                        Przywróć mu perfekcyjny wygląd dzięki profesjonalnemu detailingowi.
+                        Od odświeżenia wnętrza po pełną korektę lakieru – zadzwoń lub napisz, a zajmiemy się resztą.
+                    </p>
+
+                    <a href="#" class="cta-btn">Umów wizytę</a>
+                </div>
+
+                <!-- RIGHT SIDE: Contact Info -->
+                <div class="contact__right glass">
+                    <ul class="contact__list">
+                        <li class="contact__item">
+                            <span class="contact__icon">📞</span>
+                            <a href="tel:+48123456789" class="contact__link">+48 123 456 789</a>
+                        </li>
+                        <li class="contact__item">
+                            <span class="contact__icon">✉️</span>
+                            <a href="mailto:kontakt@example.com" class="contact__link">kontakt@example.com</a>
+                        </li>
+                        <li class="contact__item">
+                            <span class="contact__icon">📸</span>
+                            <a href="https://instagram.com/nazwa_uzytkownika" target="_blank"
+                                class="contact__link">@nazwa_uzytkownika</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
         </section>
+
 
     </main>
 
+    <footer class="footer footer__glass-footer">
+        <p>&copy; 2025 xDetalz. Wszystkie prawa zastrzeżone.</p>
+        <p>Polub nas na Instagramie: <a href="#">@nazwa_uzytkownika</a></p>
+    </footer>
 
     <script src="./script.js"></script>
 </body>

@@ -22,19 +22,21 @@ const handleNav = () => {
 	});
 };
 
-faqItems.forEach(item => {
-    const btn = item.querySelector('.faq__question');
+faqItems.forEach((item) => {
+	const btn = item.querySelector('.faq__question');
 
-    btn.addEventListener('click', () => {
+	btn.addEventListener('click', () => {
+		faqItems.forEach((i) => {
+			if (i !== item) {
+				i.classList.remove('faq__item--active');
+				i.querySelector('.faq__question').classList.remove(
+					'faq__question--active'
+				);
+			}
+		});
 
-        faqItems.forEach(i => {
-            if (i !== item) {
-                i.classList.remove('faq__item--active');
-                i.querySelector('.faq__question').classList.remove('faq__question--active');
-            }
-        });
-
-        item.classList.toggle('faq__item--active');
-        btn.classList.toggle('faq__question--active');
-    });
+		item.classList.toggle('faq__item--active');
+		btn.classList.toggle('faq__question--active');
+	});
 });
+
