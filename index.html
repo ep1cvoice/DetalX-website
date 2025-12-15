@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DetalX</title>
     <script src="https://kit.fontawesome.com/8203c85e37.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -34,7 +38,7 @@
                 <div class="nav__menu">
                     <a href="#about" class="nav__link">info</a>
                     <a href="#services" class="nav__link">usługi</a>
-                    <a href="#gallery" class="nav__link">galeria</a>
+                    <a href="#projects" class="nav__link">galeria</a>
                     <a href="#reviews" class="nav__link">opinie</a>
                     <a href="#achievements" class="nav__link">osiągnięcia</a>
                     <a href="#faq" class="nav__link">faq</a>
@@ -47,7 +51,7 @@
             <div class="nav__menu-mobile">
                 <a href="#about" class="nav__link">info</a>
                 <a href="#services" class="nav__link">usługi</a>
-                <a href="#gallery" class="nav__link">galeria</a>
+                <a href="#projects" class="nav__link">galeria</a>
                 <a href="#reviews" class="nav__link">opinie</a>
                 <a href="#achievements" class="nav__link">osiągnięcia</a>
                 <a href="#faq" class="nav__link">faq</a>
@@ -88,91 +92,209 @@
 
                     <div class="about__content">
                         <h2 class="about__title">O mnie</h2>
-                        <h3 class="about__name">K. S.</h3>
+                        <h3 class="about__name">Jan Przykładowy</h3>
                         <p class="about__text">
-                            Cześć! Nazywam się <strong>K. S.</strong> i od kilku lat z pasją zajmuję się
-                            <strong>auto detailingiem</strong> – kompleksową pielęgnacją i renowacją samochodów.
-                            Zadbam o każdy detal Twojego auta: od korekty lakieru, przez pranie tapicerki,
-                            aż po zabezpieczenie powłok ceramicznych.
+                            Witaj! Nazywam się <strong>Jan</strong> i od lat z pasją zajmuję się <strong>auto
+                                detailingiem</strong>.
+                            Dla mnie to nie tylko praca – to sztuka dbania o każdy detal Twojego samochodu.
                         </p>
                         <p class="about__text">
-                            W mojej pracy liczy się precyzja, cierpliwość i jakość – traktuję każdy samochód
-                            jak własny. Jeśli chcesz, żeby Twój pojazd znowu wyglądał jak nowy,
-                            jesteś we właściwym miejscu!
+                            Oferuję kompleksową pielęgnację i renowację aut – od korekty lakieru, przez odświeżenie
+                            wnętrza, aż po zabezpieczenie powłok ceramicznych. Każdy pojazd traktuję indywidualnie, z
+                            najwyższą starannością i precyzją.
+                        </p>
+                        <p class="about__text">
+                            Moim celem jest, aby Twój samochód odzyskał blask i wyglądał perfekcyjnie, tak jak w dniu
+                            zakupu. Jeśli cenisz jakość i profesjonalizm, znajdziesz to wszystko właśnie tutaj.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="services section" id="services">
-            <div class="wrapper">
-                <h2 class="section-title">usługi</h2>
-                <div class="underline"></div>
+        <section class="services" id="services">
+            <h2 class="section-title">usługi</h2>
+            <div class="underline"></div>
+            <div class="wrapper services__layout-top">
 
-                <div class="services__cards">
-                    <div class="card">
-                        <img src="./img/services/wash.jpg" alt="Mycie karoserii">
-                        <h3>Profesjonalne mycie karoserii</h3>
-                        <p>Dokładne mycie całego auta z użyciem specjalistycznych środków.</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/services/decontamination.jpg" alt="Dekontaminacja lakieru">
-                        <h3>Dekontaminacja lakieru</h3>
-                        <p>Usuwanie zanieczyszczeń, smoły i metali z powierzchni lakieru.</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/services/polishing.jpg" alt="Polerowanie lakieru">
-                        <h3>Polerowanie / korekta lakieru</h3>
-                        <p>Przywracanie blasku i likwidacja drobnych rys na lakierze.</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/services/paint.jpg" alt="Powłoka ceramiczna">
-                        <h3>Aplikacja powłoki ceramicznej lub wosku</h3>
-                        <p>Długotrwała ochrona lakieru i łatwiejsze utrzymanie czystości.</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/services/inside.jpg" alt="Czyszczenie wnętrza">
-                        <h3>Kompleksowe czyszczenie wnętrza</h3>
-                        <p>Dokładne czyszczenie wszystkich elementów kabiny samochodu.</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/services/cleaning.jpg" alt="Pranie tapicerki">
-                        <h3>Pranie tapicerki / czyszczenie i impregnacja skóry</h3>
-                        <p>Usuwanie zabrudzeń i ochrona materiałów wnętrza samochodu.</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/services/headlight.jpg" alt="Regeneracja reflektorów">
-                        <h3>Regeneracja i zabezpieczenie reflektorów</h3>
-                        <p>Przywracanie przejrzystości reflektorów i ochrona przed matowieniem.</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/services/felgi.jpg" alt="Detailing felg">
-                        <h3>Detailing felg</h3>
-                        <p>Czyszczenie, polerowanie i ochrona felg aluminiowych i stalowych.</p>
-                    </div>
+
+                <!-- LEFT: IMAGE -->
+                <div class="services__image">
+                    <img src="./img/services/polishing.jpg" alt="Premium detailing lakieru" />
                 </div>
 
+
+                <!-- RIGHT: CONTENT -->
+                <div class="services__content">
+                    <h2 class="section-title">Perfekcja zaczyna się od podstaw</h2>
+                    <p class="intro">
+                        Profesjonalny detailing oparty na precyzji i doświadczeniu. Skupiamy się na elementach, które
+                        realnie wpływają na wygląd, trwałość i wartość Twojego auta.
+                    </p>
+
+
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <span class="index">01</span>
+                            <div>
+                                <h3>Korekta & polerowanie lakieru</h3>
+                                <p>Usuwanie rys, hologramów i przywracanie głębi koloru.</p>
+                            </div>
+                        </li>
+
+
+                        <li class="services__item">
+                            <span class="index">02</span>
+                            <div>
+                                <h3>Powłoki ceramiczne & ochronne</h3>
+                                <p>Zaawansowana ochrona lakieru, hydrofobowość i trwały połysk.</p>
+                            </div>
+                        </li>
+
+
+                        <li class="services__item">
+                            <span class="index">03</span>
+                            <div>
+                                <h3>Detailing wnętrza</h3>
+                                <p>Kompleksowe czyszczenie, impregnacja i odświeżenie kabiny.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+            <div class="wrapper services__layout-bottom">
+
+
+                <!-- LEFT: IMAGE -->
+                <div class="services__image">
+                    <img src="./img/services/headlight.jpg" alt="Premium detailing lakieru" />
+                </div>
+
+
+                <!-- RIGHT: CONTENT -->
+                <div class="services__content services__content-bottom">
+
+
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <span class="index">04</span>
+                            <div>
+                                <h3>Ochrona szyb & felg</h3>
+                                <p>Powłoki hydrofobowe na szyby oraz zabezpieczenie felg przed brudem, pyłem hamulcowym
+                                    i chemią drogową.</p>
+                            </div>
+                        </li>
+
+
+                        <li class="services__item">
+                            <span class="index">05</span>
+                            <div>
+                                <h3>Zabezpieczenie tapicerki (skóra / tkanina)</h3>
+                                <p>Impregnacja chroniąca przed plamami, przetarciami i promieniowaniem UV, z zachowaniem
+                                    naturalnego wyglądu materiałów.</p>
+                            </div>
+                        </li>
+
+
+                        <li class="services__item">
+                            <span class="index">06</span>
+                            <div>
+                                <h3>Renowacja reflektorów</h3>
+                                <p>Polerowanie, usuwanie zmatowień i zabezpieczenie UV dla lepszej estetyki i
+                                    bezpieczeństwa jazdy.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <a href="#contact" class="cta-btn">Umów indywidualną wycene</a>
+                </div>
+
+
             </div>
         </section>
 
-        <section class="gallery" id="gallery">
+        <section class="projects section" id="projects">
             <div class="wrapper">
-                <h2 class="section-title">galeria</h2>
+                <h2 class="section-title">Wybrane realizacje</h2>
                 <div class="underline"></div>
+                <div class="swiper-wrapper projects__slider">
 
+                    <div class="projects__card">
+                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738" alt="BMW M4"
+                            loading="lazy">
+                        <div class="projects__content">
+                            <h3>BMW M4</h3>
+                            <p>Korekta lakieru · Ceramika · Wnętrze</p>
+                            <a href="#">Zobacz realizację →</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9" alt="Audi RS6"
+                            loading="lazy">
+                        <div class="projects__content">
+                            <h3>Audi RS6</h3>
+                            <p>One-step · Ceramika</p>
+                            <a href="#">Zobacz realizację →</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8" alt="Mercedes AMG GT"
+                            loading="lazy">
+                        <div class="projects__content">
+                            <h3>Mercedes AMG GT</h3>
+                            <p>Full detailing · Felgi</p>
+                            <a href="#">Zobacz realizację →</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="https://images.unsplash.com/photo-1601924579537-7c0b0f7b88b6" alt="Porsche 911"
+                            loading="lazy">
+                        <div class="projects__content">
+                            <h3>Porsche 911</h3>
+                            <p>Korekta 2-step · Ceramika</p>
+                            <a href="#">Zobacz realizację →</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="https://images.unsplash.com/photo-1617098900591-3f90928e8c54" alt="Range Rover Sport"
+                            loading="lazy">
+                        <div class="projects__content">
+                            <h3>Range Rover Sport</h3>
+                            <p>Detailing wnętrza · Skóra</p>
+                            <a href="#">Zobacz realizację →</a>
+                        </div>
+                    </div>
+
+                    <div class="projects__card">
+                        <img src="https://images.unsplash.com/photo-1621789098261-3a28c98aefc6" alt="Tesla Model S"
+                            loading="lazy">
+                        <div class="projects__content">
+                            <h3>Tesla Model S</h3>
+                            <p>Powłoka ceramiczna · Felgi</p>
+                            <a href="#">Zobacz realizację →</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
+
+
 
         <section class="reviews" id="reviews">
-            <div class="review_wrapper wrapper">
-                <h2 class="reviews__title section-title">Opinie</h2>
+            <div class="reviews__wrapper wrapper">
+                <h2 class="reviews__title section-title">Opinie klientów</h2>
                 <div class="reviews__underline underline"></div>
 
-                <p class="reviews__subtitle">Poznaj opinie naszych klientów</p>
-
                 <div class="reviews__carousel">
-                    <!-- Review 1 -->
                     <div class="reviews__item">
                         <div class="reviews__header">
                             <img src="https://i.pravatar.cc/80?img=1" alt="Jan" class="reviews__avatar">
@@ -186,7 +308,6 @@
                         </p>
                     </div>
 
-                    <!-- Review 2 -->
                     <div class="reviews__item">
                         <div class="reviews__header">
                             <img src="https://i.pravatar.cc/80?img=2" alt="Marta" class="reviews__avatar">
@@ -200,7 +321,30 @@
                             każdemu!</p>
                     </div>
 
-                    <!-- Review 3 -->
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="https://i.pravatar.cc/80?img=3" alt="Paweł" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Paweł</h3>
+                                <span class="reviews__car">BMW F11</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">Że skóra jak nowa! Renowacja petarda, ceramika i felgi dopieszczone do
+                            perfekcji!</p>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__header">
+                            <img src="https://i.pravatar.cc/80?img=3" alt="Paweł" class="reviews__avatar">
+                            <div class="reviews__info">
+                                <h3 class="reviews__name">Paweł</h3>
+                                <span class="reviews__car">BMW F11</span>
+                            </div>
+                        </div>
+                        <div class="reviews__stars">★★★★★</div>
+                        <p class="reviews__text">Że skóra jak nowa! Renowacja petarda, ceramika i felgi dopieszczone do
+                            perfekcji!</p>
+                    </div>
                     <div class="reviews__item">
                         <div class="reviews__header">
                             <img src="https://i.pravatar.cc/80?img=3" alt="Paweł" class="reviews__avatar">
@@ -214,49 +358,10 @@
                             perfekcji!</p>
                     </div>
 
-                    <!-- Review 4 -->
-                    <div class="reviews__item">
-                        <div class="reviews__header">
-                            <img src="https://i.pravatar.cc/80?img=4" alt="Krzysztof" class="reviews__avatar">
-                            <div class="reviews__info">
-                                <h3 class="reviews__name">Krzysztof</h3>
-                                <span class="reviews__car">VW Golf</span>
-                            </div>
-                        </div>
-                        <div class="reviews__stars">★★★★★</div>
-                        <p class="reviews__text">Felgi i lakier jak z salonu! Widać, że Pan zna się na rzeczy.</p>
-                    </div>
-
-                    <!-- Review 5 -->
-                    <div class="reviews__item">
-                        <div class="reviews__header">
-                            <img src="https://i.pravatar.cc/80?img=5" alt="Agnieszka" class="reviews__avatar">
-                            <div class="reviews__info">
-                                <h3 class="reviews__name">Agnieszka</h3>
-                                <span class="reviews__car">Toyota Corolla</span>
-                            </div>
-                        </div>
-                        <div class="reviews__stars">★★★★★</div>
-                        <p class="reviews__text">Czystość wnętrza i połysk lakieru powala, na pewno wrócę przy kolejnej
-                            okazji.</p>
-                    </div>
-
-                    <!-- Review 6 -->
-                    <div class="reviews__item">
-                        <div class="reviews__header">
-                            <img src="https://i.pravatar.cc/80?img=6" alt="Tomasz" class="reviews__avatar">
-                            <div class="reviews__info">
-                                <h3 class="reviews__name">Tomasz</h3>
-                                <span class="reviews__car">Skoda Octavia</span>
-                            </div>
-                        </div>
-                        <div class="reviews__stars">★★★★★</div>
-                        <p class="reviews__text">Polecam każdemu, kto chce, żeby auto wyglądało jak nowe — perfekcja w
-                            każdym calu.</p>
-                    </div>
                 </div>
             </div>
         </section>
+
 
 
         <section class="achievements" id="achievements">
@@ -445,24 +550,39 @@
                     <a href="#" class="cta-btn">Umów wizytę</a>
                 </div>
 
-                <!-- RIGHT SIDE: Contact Info -->
+
                 <div class="contact__right glass">
                     <ul class="contact__list">
                         <li class="contact__item">
-                            <span class="contact__icon">📞</span>
-                            <a href="tel:+48123456789" class="contact__link">+48 123 456 789</a>
+                            <a href="tel:+48123456789" class="contact__link">
+                                <span class="contact__icon"><i class="fa-solid fa-phone"></i></span>
+                                <span class="contact__text">+48 123 456 789</span>
+                            </a>
+                        </li>
+
+                        <li class="contact__item">
+                            <a href="mailto:kontakt@example.com" class="contact__link">
+                                <span class="contact__icon"><i class="fa-solid fa-envelope"></i></span>
+                                <span class="contact__text">kontakt@example.com</span>
+                            </a>
+                        </li>
+
+                        <li class="contact__item">
+                            <a href="https://instagram.com/nazwa_uzytkownika" target="_blank" class="contact__link">
+                                <span class="contact__icon"><i class="fa-brands fa-instagram"></i></span>
+                                <span class="contact__text">@nazwa_uzytkownika</span>
+                            </a>
                         </li>
                         <li class="contact__item">
-                            <span class="contact__icon">✉️</span>
-                            <a href="mailto:kontakt@example.com" class="contact__link">kontakt@example.com</a>
-                        </li>
-                        <li class="contact__item">
-                            <span class="contact__icon">📸</span>
-                            <a href="https://instagram.com/nazwa_uzytkownika" target="_blank"
-                                class="contact__link">@nazwa_uzytkownika</a>
+                            <a href="https://instagram.com/nazwa_uzytkownika" target="_blank" class="contact__link">
+                                <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+                                <span class="contact__text">Knurów, woj. Śląskie</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
+
+
             </div>
 
         </section>
@@ -472,10 +592,14 @@
 
     <footer class="footer footer__glass-footer">
         <p>&copy; 2025 xDetalz. Wszystkie prawa zastrzeżone.</p>
-        <p>Polub nas na Instagramie: <a href="#">@nazwa_uzytkownika</a></p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
