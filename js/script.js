@@ -1,7 +1,7 @@
 const nav = document.querySelector('.nav');
-const navLinks = document.querySelectorAll('.nav__link');
+const navLinks = document.querySelectorAll('.nav__menu-mobile .nav__link');
+const burger = document.querySelector('.nav__burger');
 const mobileMenu = document.querySelector('.nav__menu-mobile');
-const burgerBtn = document.querySelector('.nav__burger-box');
 const faqItems = document.querySelectorAll('.faq__item');
 
 window.addEventListener('scroll', () => {
@@ -12,15 +12,17 @@ window.addEventListener('scroll', () => {
 	}
 });
 
-const handleNav = () => {
-	mobileMenu.classList.toggle('nav__menu-mobile--active');
+// Toggle menu
+burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('nav__menu-mobile--active');
+});
 
-	navLinks.forEach((link) => {
-		link.addEventListener('click', () => {
-			mobileMenu.classList.remove('nav__menu-mobile--active');
-		});
-	});
-};
+// Zamykaj menu po kliknięciu linku
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('nav__menu-mobile--active');
+    });
+});
 
 faqItems.forEach((item) => {
 	const btn = item.querySelector('.faq__question');
